@@ -1,25 +1,26 @@
 import { ArrowDown, ArrowRight, ArrowUp } from 'lucide-react'
+import Feedback from '../components/Feedback'
 
 const episodes = [
   {
     number: '01',
     title: 'ENTRANDO AL MUNDO',
     description: 'Colombia vivió una época marcada por el narcotráfico, el miedo y la violencia. ¿Cómo pasó todo esto y cómo una historia real terminó convirtiéndose en ficción? Viajemos a los años ochenta y noventa para descubrirlo.',
-    image: '/images/Episodio-1.jpeg',
+    image: `${import.meta.env.BASE_URL}images/Episodio-1.jpeg`,
     link: 'https://open.spotify.com/episode/027PnuLG0X9OINYWR1qFve?si=NhzRyXi8RTaaDRM7DvN0QA&utm_source=copy-link',
   },
   {
     number: '02',
     title: 'ATRAPADOS',
     description: '¿Por qué, aunque sabíamos que estábamos viendo historias llenas de peligro y conflictos, no podíamos dejar de verlas? En este segundo capítulo de La Nueva Vuelta nos metemos del otro lado de la pantalla para entender qué hizo que las narconovelas nos atraparan tanto. Hablamos de la curiosidad, la tensión y la forma en que estas historias lograron involucrarnos mientras, casi sin darnos cuenta, aprendíamos a reconocer sus propias reglas y códigos.',
-    image: '/images/Episodio-2.jpeg',
+    image: `${import.meta.env.BASE_URL}images/Episodio-2.jpeg`,
     link: 'https://open.spotify.com/episode/0vCshz78OoCQzpbKKfUqpX?si=IWSF4IjXQIWMMXcz77R-tw&utm_source=copy-link',
   },
   {
     number: '03',
     title: 'UNA PALABRITA',
     description: '¿En qué momento el narcotráfico pasó de las noticias a convertirse en historias que veíamos capítulo tras capítulo? En este primer episodio de La Nueva Vuelta, nos devolvemos al comienzo de las narconovelas para entender cómo estas historias llegaron a nuestras pantallas.',
-    image: '/images/Episodio-3.jpeg',
+    image: `${import.meta.env.BASE_URL}images/Episodio-3.jpeg`,
     link: 'https://open.spotify.com/episode/6I055ewFp6kaxfgFjz4VwC?si=p9HEyIAKSRu7NCYOcP1ncQ',
   },
 ]
@@ -78,6 +79,11 @@ function Capitulos() {
               <h2>{episode.title}</h2>
               <p>{episode.description}</p>
             </div>
+
+            <Feedback
+              contentId={`podcast-${episode.number}`}
+              title={`Episodio ${episode.number}: ${episode.title}`}
+            />
 
             {!imageFirst && <ArrowDown className="episode-arrow" size={24} aria-hidden="true" />}
             {!imageFirst && imageLink}

@@ -9,6 +9,7 @@ import Capitulos from './pages/Capitulos'
 import Historia from './pages/Historia'
 import HistoriaEspejo from './pages/HistoriaEspejo'
 import HistoriaMemoria from './pages/HistoriaMemoria'
+import Blogs from './pages/Blogs'
 
 function ScrollToTop() {
   const { pathname } = useLocation()
@@ -33,6 +34,7 @@ function App() {
           <Route path="/historia/memoria" element={<HistoriaMemoria />} />
           <Route path="/historia/espejo" element={<HistoriaEspejo />} />
           <Route path="/historia" element={<Historia />} />
+          <Route path="/blogs" element={<Blogs />} />
         </Routes>
       </main>
 

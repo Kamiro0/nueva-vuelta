@@ -1,5 +1,6 @@
 import { ArrowLeft, ArrowRight } from 'lucide-react'
 import { Link } from 'react-router-dom'
+import Feedback from '../components/Feedback'
 
 function HistoriaMemoria() {
   return (
@@ -106,8 +107,9 @@ function HistoriaMemoria() {
       </div>
 
       <div className="history-page-art">
-        <img src="/images/Historia-3.png" alt="Ilustración de El negocio de la memoria con lentejuelas" />
+        <img src={`${import.meta.env.BASE_URL}images/Historia-3.png`} alt="Ilustración de El negocio de la memoria con lentejuelas" />
       </div>
+      <Feedback contentId="historia-3" title="El negocio de la memoria con lentejuelas" />
     </section>
   )
 }

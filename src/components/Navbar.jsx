@@ -7,13 +7,14 @@ function Navbar() {
     <header className="navbar">
 
       <NavLink to="/" className="brand">
-        <img src="/images/logo.jpeg" alt="La Nueva Vuelta" />
+        <img src={`${import.meta.env.BASE_URL}images/logo.jpeg`} alt="La Nueva Vuelta" />
       </NavLink>
 
       <nav className="nav-links">
         <NavLink to="/">INICIO</NavLink>
         <NavLink to="/capitulos">PODCAST</NavLink>
         <NavLink to="/historia">HISTORIA</NavLink>
+        <NavLink to="/blogs">BLOGS</NavLink>
       </nav>
 
       <div className="social-links">

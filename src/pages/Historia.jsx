@@ -1,5 +1,6 @@
 import { ArrowRight } from 'lucide-react'
 import { Link } from 'react-router-dom'
+import Feedback from '../components/Feedback'
 
 function Historia() {
   return (
@@ -157,8 +158,9 @@ function Historia() {
       </div>
 
       <div className="history-page-art">
-        <img src="/images/Historia-1.png" alt="Ilustración de la primera historia" />
+        <img src={`${import.meta.env.BASE_URL}images/Historia-1.png`} alt="Ilustración de la primera historia" />
       </div>
+      <Feedback contentId="historia-1" title="Ya no me sorprende un traqueto" />
     </section>
   )
 }

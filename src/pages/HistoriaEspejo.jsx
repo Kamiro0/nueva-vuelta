@@ -1,5 +1,6 @@
 import { ArrowLeft, ArrowRight } from 'lucide-react'
 import { Link } from 'react-router-dom'
+import Feedback from '../components/Feedback'
 
 function HistoriaEspejo() {
   return (
@@ -122,8 +123,9 @@ function HistoriaEspejo() {
       </div>
 
       <div className="history-page-art">
-        <img src="/images/Historia-2.png" alt="Ilustración de El espejo de cristal y barro" />
+        <img src={`${import.meta.env.BASE_URL}images/Historia-2.png`} alt="Ilustración de El espejo de cristal y barro" />
       </div>
+      <Feedback contentId="historia-2" title="El espejo de cristal y barro" />
     </section>
   )
 }

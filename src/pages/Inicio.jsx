@@ -6,7 +6,7 @@ function Inicio() {
     <section className="hero hero-inicio">
 
       <img
-        src="/images/portada-inicio.png"
+        src={`${import.meta.env.BASE_URL}images/portada-inicio.png`}
         alt="La Nueva Vuelta"
         className="hero-background"
       />
