@@ -1,7 +1,10 @@
 import { useEffect, useState } from 'react'
 import { MessageCircle, Share2, ThumbsUp, X } from 'lucide-react'
 
-const API_URL = `${import.meta.env.VITE_API_BASE_URL || `${import.meta.env.BASE_URL}api`}/feedback.php`
+const PHP_API_BASE_URL = import.meta.env.VITE_API_BASE_URL
+const API_URL = PHP_API_BASE_URL
+  ? `${PHP_API_BASE_URL.replace(/\/+$/, '')}/feedback.php`
+  : '/api/feedback'
 const VISITOR_KEY = 'la-nueva-vuelta-visitor'
 const REACTION_OPTIONS = [
   { type: 'like', emoji: '👍', label: 'Me gusta' },
@@ -26,6 +29,21 @@ function getVisitorId() {
   return visitorId
 }
 
+async function readApiResponse(response, fallbackError) {
+  if (!response.headers.get('content-type')?.includes('application/json')) {
+    throw new Error('La API no respondió en formato JSON. En Vercel, comprueba que /api/feedback esté desplegada; en XAMPP, revisa Apache y la ruta de la API.')
+  }
+
+  let data
+  try {
+    data = await response.json()
+  } catch {
+    throw new Error('El servidor envió una respuesta JSON no válida. Comprueba la configuración de la API.')
+  }
+  if (!response.ok) throw new Error(data.error || fallbackError)
+  return data
+}
+
 function Feedback({ contentId, title, mode = 'modal' }) {
   const [feedback, setFeedback] = useState({
     comments: [],
@@ -48,8 +66,7 @@ function Feedback({ contentId, title, mode = 'modal' }) {
     setError('')
     try {
       const response = await fetch(`${API_URL}?item=${encodeURIComponent(contentId)}&visitor=${encodeURIComponent(getVisitorId())}`)
-      const data = await response.json()
-      if (!response.ok) throw new Error(data.error || 'No se pudo cargar la conversación.')
+      const data = await readApiResponse(response, 'No se pudo cargar la conversación.')
       setFeedback(data)
     } catch (requestError) {
       setError(requestError.message || 'No se pudo conectar con el servidor.')
@@ -71,8 +88,7 @@ function Feedback({ contentId, title, mode = 'modal' }) {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ action, item: contentId, visitor: getVisitorId(), ...values }),
       })
-      const data = await response.json()
-      if (!response.ok) throw new Error(data.error || 'No se pudo guardar. Inténtalo de nuevo.')
+      const data = await readApiResponse(response, 'No se pudo guardar. Inténtalo de nuevo.')
       if (action === 'comment') {
         setFeedback((current) => ({ ...current, comments: [...current.comments, data.comment] }))
         setComment('')
