@@ -1,6 +1,6 @@
 import Feedback from '../components/Feedback'
 
-const VIDEO_URL = `${import.meta.env.BASE_URL}videos/la-narco-cultura.mp4`
+const VIDEO_URL = import.meta.env.VITE_VIDEO_URL || `${import.meta.env.BASE_URL}videos/la-narco-cultura.mp4`
 
 function getEmbedUrl(url) {
   if (!url) return ''

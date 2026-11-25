@@ -46,7 +46,21 @@ Si la base MySQL ya existía antes de agregar las reacciones y los compartidos, 
 
 ## Video de Blogs
 
-El video local de Blogs está en `public/videos/la-narco-cultura.mp4`. Para cambiarlo, reemplaza ese archivo manteniendo el nombre. También se aceptan enlaces directos `.mp4`, `.webm` u `.ogg`, además de enlaces de YouTube. Los comentarios aparecen debajo del reproductor.
+Por defecto, Blogs usa `public/videos/la-narco-cultura.mp4`. El archivo actual pesa unos 90 MB; por eso puede tardar en cargar. Puedes reducirlo con HandBrake (MP4, H.264, audio AAC y 720p) o alojarlo en un servicio de video.
+
+La opción más sencilla es subirlo a YouTube como **No listado** y copiar el enlace para compartir. En Vercel, abre **Settings → Environment Variables** y agrega:
+
+- **Name:** `VITE_VIDEO_URL`
+- **Value:** el enlace de YouTube, por ejemplo `https://youtu.be/ID_DEL_VIDEO`
+- **Environments:** Production y Preview
+
+Guarda y vuelve a desplegar. La página convierte automáticamente los enlaces de YouTube compatibles al reproductor incrustado. También puedes usar la URL pública directa de un archivo `.mp4`, `.webm` u `.ogg` alojado en un servicio de almacenamiento que permita servir el video.
+
+Para probarlo localmente, agrega `VITE_VIDEO_URL=https://youtu.be/ID_DEL_VIDEO` a `.env.local` junto a `package.json`. Si no defines esta variable, se seguirá usando el MP4 local. Los comentarios aparecen debajo del reproductor.
+
+## Rutas directas en Vercel
+
+`vercel.json` configura las rutas de la aplicación para que abrir o recargar `/blogs`, `/capitulos` y las páginas de historia cargue React en lugar de devolver un 404. La ruta `/api/feedback` no se reescribe y sigue atendida por la función de Vercel.
 
 ## Comandos
 

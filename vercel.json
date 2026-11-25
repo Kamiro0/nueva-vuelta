@@ -1,0 +1,9 @@
+{
+  "rewrites": [
+    { "source": "/blogs", "destination": "/index.html" },
+    { "source": "/capitulos", "destination": "/index.html" },
+    { "source": "/historia", "destination": "/index.html" },
+    { "source": "/historia/espejo", "destination": "/index.html" },
+    { "source": "/historia/memoria", "destination": "/index.html" }
+  ]
+}
