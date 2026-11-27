@@ -1,4 +1,4 @@
-import { ArrowDown, ArrowRight, ArrowUp } from 'lucide-react'
+import { ArrowDown, ArrowRight, ArrowUp, ExternalLink } from 'lucide-react'
 import Feedback from '../components/Feedback'
 
 const episodes = [
@@ -28,14 +28,27 @@ const episodes = [
 function Capitulos() {
   return (
     <section className="inner-page section-divider">
-      <span className="section-kicker">LA NUEVA VUELTA / PODCAST</span>
-      <h1 className="page-title">PODCAST</h1>
-      <div className="red-underline"></div>
-
-      <p className="page-intro">
-        Tres episodios. Una historia que se construye
-        poco a poco. Escucha nuestra narrativa.
-      </p>
+      <header className="podcast-heading-row">
+        <div className="podcast-heading-copy">
+          <span className="section-kicker">LA NUEVA VUELTA / PODCAST</span>
+          <h1 className="page-title">PODCAST</h1>
+          <div className="red-underline"></div>
+          <p className="page-intro">
+            Tres episodios. Una historia que se construye
+            poco a poco. Escucha nuestra narrativa.
+          </p>
+        </div>
+        <a
+          className="podcast-source-link"
+          href="https://myagomezgu.wixsite.com/la-nueva-vuelta"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Esta información fue sacada de aquí. Visitar sitio original en una nueva pestaña."
+        >
+          <span>Esta información fue sacada de aquí</span>
+          <strong>Visítalo <ExternalLink size={15} aria-hidden="true" /></strong>
+        </a>
+      </header>
 
       <div className="episodes-grid">
         {episodes.map((episode) => {
