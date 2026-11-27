@@ -11,134 +11,84 @@ function Historia() {
         </span>
 
         <h1 className="page-title">
-          Ya no me sorprende un traqueto. Y eso es lo que más miedo me da.
+          El pez muere por la boca
         </h1>
         <div className="red-underline"></div>
 
         <article className="history-story">
           <p>
-            Un hombre criado entre novelas de las ocho descubre que, sin darse
-            cuenta, terminó normalizando aquello que un día juró detestar.
+            ¿Quién no ha usado esta frase en una conversación o la ha escuchado
+            al menos una vez? Lo cierto es que este dicho popular refleja la
+            profunda influencia del narcotráfico en nuestra sociedad,
+            manifestada con especial fuerza en miles de jóvenes expuestos a un
+            estilo de vida sustentado en la búsqueda de poder, legitimación y
+            dominación.
           </p>
 
           <p>
-            Me llamo Jhon Jairo. Sí, como medio barrio. Vivo en Bogotá, aunque
-            podría vivir en Medellín, Cali o cualquier lugar de Colombia. Nací
-            donde todo el mundo tiene un tío que “hizo plata”, un vecino que
-            “trabaja por fuera” y alguien que todavía dice que Pablo Escobar
-            ayudó más que el Estado.
+            Aunque la problemática se debate desde la década de 1980, el
+            fenómeno conceptual fue nombrado formalmente a comienzos de los
+            años 2000. Académicos como Luis Astorga en México y Omar Rincón en
+            Colombia institucionalizaron el análisis de la «narcocultura» como
+            objeto de estudio sociológico, permitiendo que el término
+            transcurriera de los titulares locales a los ensayos universitarios.
           </p>
 
           <p>
-            Crecí viendo novelas. Primero porque mi mamá las veía. Después
-            porque todo el mundo hablaba de ellas. Y cuando menos pensé, ya
-            sabía quién era “el duro”, quién era “la prepago”, quién era el
-            sicario más leal y hasta cuál era la camioneta que tocaba tener
-            para que lo respetaran. Nunca me pregunté por qué. Solo pasaba.
-            Como pasa todo en Colombia.
+            Pero, ¿de qué se trata realmente? Aunque existen múltiples
+            aproximaciones teóricas, las definiciones coinciden en un punto
+            central: la narcocultura es el conjunto de normas, prácticas,
+            hábitos de consumo, expresiones culturales y conductas derivadas
+            de los actores del tráfico ilícito de drogas.
           </p>
 
           <p>
-            Uno prende el televisor y ahí está otra vez. Otro capo. Otra mujer
-            operada hasta la sonrisa. Otro chino creyendo que el billete fácil
-            es un atajo. Otra frase de “plata o plomo” convertida en meme. Y
-            uno sigue comiendo. Sigue riéndose. Sigue viendo el siguiente
-            capítulo.
+            El análisis cultural plantea que la búsqueda de validación en el
+            narcotráfico no responde a un mero capricho, sino a la necesidad
+            urgente de transformar el capital ilícito en estatus, respeto y
+            legitimidad social. Dado que la mayoría de sus integrantes
+            proviene de sectores históricamente marginados o excluidos, el
+            dinero por sí solo no les otorga un lugar dentro de la «sociedad
+            formal».
           </p>
 
           <p>
-            Hasta que un día me pasó algo muy paila. Escuché a un pelado decir
-            que quería ser como el personaje de una narconovela. No estaba
-            hablando del malo. Estaba hablando del exitoso. Ahí fue cuando
-            entendí que el problema nunca fue solamente el narcotráfico. El
-            problema fue cuando dejamos de verlo como una tragedia y empezamos
-            a verlo como entretenimiento.
-          </p>
-
-          <blockquote>
-            <p>Nos aprendimos los apodos de los capos...</p>
-            <p>...pero se nos olvidaron los nombres de las víctimas.</p>
-          </blockquote>
-
-          <blockquote>
-            <p>Nos sabemos las frases de los personajes...</p>
-            <p>...pero no las historias de las familias que todavía siguen
-              buscando justicia.</p>
-          </blockquote>
-
-          <p>
-            Y mientras más series salen... ...menos nos incomoda ver una
-            camioneta blindada, un reloj de millones o una finca llena de
-            lujos. Como si todo eso ya hiciera parte del paisaje.
+            Por ello, el cambio de estatus busca imponer su propio estándar de
+            éxito mediante el consumo ostentoso: marcas de alto lujo, joyería
+            sobredimensionada, mansiones e inmuebles de alta gama. No se
+            persigue la elegancia discreta, sino el impacto visual inmediato.
+            Tras experimentar la marginación y la ausencia del Estado, muchos
+            capos buscan sustituir la institucionalidad en sus comunidades de
+            origen para ganar afecto, protección y respaldo social. Un claro
+            ejemplo histórico es Pablo Escobar en Medellín, quien proyectó la
+            imagen de un «Robin Hood moderno» mientras infundía terror en
+            rivales y autoridades para consolidar su dominio.
           </p>
 
           <p>
-            Entonces me hice una pregunta que todavía no puedo responder. ¿Las
-            narconovelas cuentan lo que somos... o terminaron enseñándonos qué
-            admirar? Porque una cosa es contar la historia. Y otra muy distinta
-            es hacer que el villano termine siendo el personaje favorito.
+            Este fenómeno se amplifica cuando producciones audiovisuales
+            —como <em>Pablo Escobar: El patrón del mal</em> o <em>Sin senos no
+            hay paraíso</em>— provocan que el público romantice o se identifique
+            con este estilo de vida, impactando de manera crítica a los jóvenes
+            en búsqueda de identidad. Aunque el material no pretende enaltecer
+            a los personajes, la ficción queda abierta a múltiples
+            interpretaciones.
           </p>
 
           <p>
-            Tal vez el problema nunca estuvo en la pantalla. Tal vez siempre
-            estuvo en nosotros. En las veces que aplaudimos. En las veces que
-            repetimos las frases. En las veces que dijimos “qué chimba de
-            personaje”, olvidando que detrás de esa ficción hubo bombas,
-            secuestros, desplazamientos y miles de muertos.
+            Un caso ilustrativo ocurrió en Venezuela hacia 2011 y 2012 con la
+            serie animada <em>Cárcel o Infierno</em>. La producción relataba la
+            historia de «Cara e' Muerto», un joven recluido que debía adaptarse
+            a un entorno hostil marcado por la violencia y las traiciones hasta
+            convertirse en el «pran» del centro penitenciario. A pesar de que
+            su creador declaró en entrevistas que el objetivo era prevenir que
+            la juventud idealizara los lujos y el dinero fácil, el resultado
+            demostró cómo la ficción puede cruzar la línea hacia la
+            desensibilización del espectador. En lugar de disuadir, estas
+            narrativas terminan normalizando patrones de conducta y
+            consolidando una estética que se perpetúa entre las nuevas
+            generaciones.
           </p>
-
-          <p>
-            Hoy apago el televisor, pero esta vez no para cambiar de canal. Lo
-            apago porque ya no quiero seguir viendo estas historias sin
-            preguntarme qué dejaron en mí. No pretendo convencer a nadie de
-            dejar de ver narconovelas. Lo que sí quiero es dejar de
-            tragármelas sin pensar.
-          </p>
-
-          <p>
-            Porque si yo crecí creyendo que todo eso era normal, ¿a cuántos más
-            les habrá pasado lo mismo? Por eso decidí empezar esta conversación.
-            ¿También le ha pasado? ¿Alguna vez admiró a un personaje y después
-            se preguntó por qué? ¿Recuerda la primera narconovela que vio? ¿Qué
-            imagen del éxito, del poder o de la violencia le dejó? Quiero leer
-            esas historias, esas dudas y esas incomodidades.
-          </p>
-
-          <p>
-            Tal vez, si empezamos a hablar de ellas, podamos entender cuánto de
-            esa narcoestética sigue viviendo entre nosotros. Lo invito a
-            recorrer este especial y a participar. Porque cuestionar lo que
-            hemos normalizado también es una forma de cambiar la historia.
-          </p>
-
-          <h2 className="history-sources-title">Bibliografía consultada</h2>
-          <ul className="history-sources">
-            <li>
-              Amaya, J. F. T. (2015). Retórica, Argumentación e Identificación
-              en la Narco Telenovela colombiana. Intersticios. Revista
-              sociológica de pensamiento crítico, 9(2).
-            </li>
-            <li>
-              Alvarado, X. B., &amp; Bonilla, C. M. (2025). Narcotelenovelas y
-              narcoésteticas: del entretenimiento a la necropolítica. Revista
-              NUPEM, 17(40).
-            </li>
-            <li>
-              Peña-Cañas, J. J., &amp; Galán-Fajardo, H. (2025). Plata o plomo:
-              40 años de narcoficciones (1982-2022). Palabra Clave, 28(1).
-            </li>
-            <li>
-              Rincón, O. (2019). TV-violencias: Mejor contados en la ficción
-              que en la información. Revista de Estudios Hispánicos, 53(1),
-              187-209.
-            </li>
-            <li>
-              Vera Castro, W. (2021). Narconovela: un análisis crítico a la
-              telenovela del narcotráfico en Colombia, su aparición y
-              continuidad en la primera década del siglo XXI (tesis doctoral,
-              Universidad Nacional de La Plata).
-            </li>
-          </ul>
         </article>
 
         <div className="history-page-outro">
@@ -160,7 +110,7 @@ function Historia() {
       <div className="history-page-art">
         <img src={`${import.meta.env.BASE_URL}images/Historia-1.png`} alt="Ilustración de la primera historia" />
       </div>
-      <Feedback contentId="historia-1" title="Ya no me sorprende un traqueto" />
+      <Feedback contentId="historia-1" title="El pez muere por la boca" />
     </section>
   )
 }

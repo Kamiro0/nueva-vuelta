@@ -22,6 +22,24 @@ function Blogs() {
 
   return (
     <section className="blogs-page">
+      <header className="blogs-intro">
+        <span className="section-kicker">LA NUEVA VUELTA / BLOGS</span>
+        <h1 className="page-title">
+          Narcocultura y exclusión: ¿ficción o realidad? | La Nueva Vuelta
+        </h1>
+        <h2>Sinopsis</h2>
+        <p>
+          En La Nueva Vuelta analizamos cómo evolucionó la narcocultura desde
+          los 80 hasta hoy, el impacto de series como <em>El patrón del mal</em>,
+          <em> Sin senos no hay paraíso</em> y <em>Cárcel o infierno</em>, su
+          cruce con el género urbano y qué alternativas reales de éxito tienen
+          los jóvenes frente a la exclusión.
+        </p>
+        <p className="blogs-question">
+          ¿Para ti qué es el éxito y qué les falta a los jóvenes? Déjalo en los
+          comentarios.
+        </p>
+      </header>
       <div className="blogs-video">
         {videoUrl ? (
           isDirectVideo ? (

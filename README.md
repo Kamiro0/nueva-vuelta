@@ -38,6 +38,8 @@ Vercel sirve la función en `/api/feedback`. Cuando el despliegue termine, comen
 
 5. Desde la carpeta del proyecto, ejecuta `npm run dev` y abre la dirección que indique Vite, normalmente `http://localhost:5173`.
 
+Si las reacciones o comentarios muestran **Failed to fetch**, confirma que Apache y MySQL estén iniciados en XAMPP y que la API esté copiada en `C:\xampp\htdocs\nueva-vuelta\api`. Si Vite eligió otro puerto, la API local acepta orígenes `localhost` y `127.0.0.1` en cualquier puerto.
+
 La API local usa por defecto el usuario MySQL `root` sin contraseña, habitual en XAMPP. Si cambiaste esa configuración, define `DB_HOST`, `DB_NAME`, `DB_USER` y `DB_PASSWORD` en el entorno de PHP. `.env.local` es solo para tu computadora; no lo subas a GitHub.
 
 La API acepta comentarios y reacciones para los episodios (`podcast-01` a `podcast-03`), las historias (`historia-1` a `historia-3`) y el video (`video-principal`). Cada visitante puede elegir una de siete reacciones, cambiarla o quitarla; también se cuentan los compartidos. Cada visitante se identifica con un identificador aleatorio guardado en su navegador; no se necesita crear una cuenta.
